@@ -12,6 +12,11 @@
 		8A078CDE1F91BD0C0016E380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CDC1F91BD0C0016E380 /* Main.storyboard */; };
 		8A078CE01F91BD0C0016E380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CDF1F91BD0C0016E380 /* Assets.xcassets */; };
 		8A078CE31F91BD0C0016E380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CE11F91BD0C0016E380 /* LaunchScreen.storyboard */; };
+		8A078CEB1F91BE310016E380 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CEA1F91BE310016E380 /* GoogleService-Info.plist */; };
+		8A078CF01F91C7080016E380 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CEF1F91C7080016E380 /* Default-568h@2x.png */; };
+		8A078CF21F91C7F60016E380 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CF11F91C7F60016E380 /* Login.storyboard */; };
+		8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078CF31F91CBC20016E380 /* LoginViewController.swift */; };
+		BA759E962729B9AE181AFE83 /* Pods_Credit_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		8A078CDF1F91BD0C0016E380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A078CE21F91BD0C0016E380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A078CE41F91BD0C0016E380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A078CEA1F91BE310016E380 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A078CEF1F91C7080016E380 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8A078CF11F91C7F60016E380 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8A078CF31F91CBC20016E380 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0ECC049400D2C88C1B6D982 /* Pods-Credit_Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.release.xcconfig"; sourceTree = "<group>"; };
+		C4C87C4074B7A8F4368CD371 /* Pods-Credit_Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA759E962729B9AE181AFE83 /* Pods_Credit_Fitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D82039533B670A39300C3FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A078CCC1F91BD0C0016E380 = {
 			isa = PBXGroup;
 			children = (
 				8A078CD71F91BD0C0016E380 /* Credit_Fitness */,
 				8A078CD61F91BD0C0016E380 /* Products */,
+				F5B09078058F7DD299F44113 /* Pods */,
+				7D82039533B670A39300C3FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,50 @@
 			isa = PBXGroup;
 			children = (
 				8A078CD81F91BD0C0016E380 /* AppDelegate.swift */,
-				8A078CDA1F91BD0C0016E380 /* ViewController.swift */,
-				8A078CDC1F91BD0C0016E380 /* Main.storyboard */,
+				8A078CED1F91C6DB0016E380 /* View Controllers */,
+				8A078CEE1F91C6ED0016E380 /* Storyboards */,
 				8A078CDF1F91BD0C0016E380 /* Assets.xcassets */,
-				8A078CE11F91BD0C0016E380 /* LaunchScreen.storyboard */,
-				8A078CE41F91BD0C0016E380 /* Info.plist */,
+				8A078CEF1F91C7080016E380 /* Default-568h@2x.png */,
+				8A078CEC1F91C6BD0016E380 /* Supporting */,
 			);
 			path = Credit_Fitness;
+			sourceTree = "<group>";
+		};
+		8A078CEC1F91C6BD0016E380 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				8A078CEA1F91BE310016E380 /* GoogleService-Info.plist */,
+				8A078CE41F91BD0C0016E380 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		8A078CED1F91C6DB0016E380 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A078CDA1F91BD0C0016E380 /* ViewController.swift */,
+				8A078CF31F91CBC20016E380 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8A078CEE1F91C6ED0016E380 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A078CDC1F91BD0C0016E380 /* Main.storyboard */,
+				8A078CE11F91BD0C0016E380 /* LaunchScreen.storyboard */,
+				8A078CF11F91C7F60016E380 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F5B09078058F7DD299F44113 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4C87C4074B7A8F4368CD371 /* Pods-Credit_Fitness.debug.xcconfig */,
+				C0ECC049400D2C88C1B6D982 /* Pods-Credit_Fitness.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A078CE71F91BD0C0016E380 /* Build configuration list for PBXNativeTarget "Credit_Fitness" */;
 			buildPhases = (
+				E1770195E05259B3A088A1D3 /* [CP] Check Pods Manifest.lock */,
 				8A078CD11F91BD0C0016E380 /* Sources */,
 				8A078CD21F91BD0C0016E380 /* Frameworks */,
 				8A078CD31F91BD0C0016E380 /* Resources */,
+				B47632629D13FAB9961A7085 /* [CP] Embed Pods Frameworks */,
+				83C0E0AC314FB6AC7B498494 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,18 +187,85 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A078CE31F91BD0C0016E380 /* LaunchScreen.storyboard in Resources */,
+				8A078CEB1F91BE310016E380 /* GoogleService-Info.plist in Resources */,
+				8A078CF21F91C7F60016E380 /* Login.storyboard in Resources */,
 				8A078CE01F91BD0C0016E380 /* Assets.xcassets in Resources */,
+				8A078CF01F91C7080016E380 /* Default-568h@2x.png in Resources */,
 				8A078CDE1F91BD0C0016E380 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83C0E0AC314FB6AC7B498494 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B47632629D13FAB9961A7085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1770195E05259B3A088A1D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credit_Fitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A078CD11F91BD0C0016E380 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */,
 				8A078CDB1F91BD0C0016E380 /* ViewController.swift in Sources */,
 				8A078CD91F91BD0C0016E380 /* AppDelegate.swift in Sources */,
 			);
@@ -272,29 +402,35 @@
 		};
 		8A078CE81F91BD0C0016E380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C87C4074B7A8F4368CD371 /* Pods-Credit_Fitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXAF9LTG2Y;
 				INFOPLIST_FILE = Credit_Fitness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Credit-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8A078CE91F91BD0C0016E380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0ECC049400D2C88C1B6D982 /* Pods-Credit_Fitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXAF9LTG2Y;
 				INFOPLIST_FILE = Credit_Fitness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Credit-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
