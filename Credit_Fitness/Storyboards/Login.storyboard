@@ -17,13 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="cSl-94-Ify">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.7472195155279483" blue="0.67361563858937723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uLT-qJ-VpD">
+                                <rect key="frame" x="0.0" y="40" width="375" height="76.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHe-Zd-jiX">
+                                        <rect key="frame" x="152" y="0.0" width="71" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0T-AY-gmX">
+                                        <rect key="frame" x="0.0" y="32.5" width="375" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="g8U-Mb-TDt"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.99155544221559211" green="0.9823794162525622" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginPress:" destination="d11-IM-Xx2" eventType="touchUpInside" id="UFc-UP-eNb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n0T-AY-gmX" firstAttribute="leading" secondItem="uLT-qJ-VpD" secondAttribute="leading" id="KMh-gT-1Hn"/>
+                                    <constraint firstAttribute="trailing" secondItem="n0T-AY-gmX" secondAttribute="trailing" id="YD9-A7-f4t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TWP-y1-HU1" firstAttribute="trailing" secondItem="uLT-qJ-VpD" secondAttribute="trailing" id="FH1-JD-F70"/>
+                            <constraint firstItem="uLT-qJ-VpD" firstAttribute="leading" secondItem="TWP-y1-HU1" secondAttribute="leading" id="JwO-32-eiJ"/>
+                            <constraint firstItem="uLT-qJ-VpD" firstAttribute="top" secondItem="TWP-y1-HU1" secondAttribute="top" constant="20" id="kyp-Ml-Dk2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TWP-y1-HU1"/>
                     </view>
+                    <connections>
+                        <outlet property="login" destination="n0T-AY-gmX" id="hy6-4l-k3Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbU-oe-rJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="-102"/>
+            <point key="canvasLocation" x="128.80000000000001" y="-102.09895052473765"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,7 @@
 		8A078CF01F91C7080016E380 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CEF1F91C7080016E380 /* Default-568h@2x.png */; };
 		8A078CF21F91C7F60016E380 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CF11F91C7F60016E380 /* Login.storyboard */; };
 		8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078CF31F91CBC20016E380 /* LoginViewController.swift */; };
+		8A078D031F921C080016E380 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D021F921C080016E380 /* User.swift */; };
 		BA759E962729B9AE181AFE83 /* Pods_Credit_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		8A078CEF1F91C7080016E380 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8A078CF11F91C7F60016E380 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8A078CF31F91CBC20016E380 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A078D021F921C080016E380 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ECC049400D2C88C1B6D982 /* Pods-Credit_Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		C4C87C4074B7A8F4368CD371 /* Pods-Credit_Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		8A078CD71F91BD0C0016E380 /* Credit_Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				8A078D011F921BF40016E380 /* Models */,
 				8A078CD81F91BD0C0016E380 /* AppDelegate.swift */,
 				8A078CED1F91C6DB0016E380 /* View Controllers */,
 				8A078CEE1F91C6ED0016E380 /* Storyboards */,
@@ -113,6 +116,14 @@
 				8A078CF11F91C7F60016E380 /* Login.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A078D011F921BF40016E380 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A078D021F921C080016E380 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F5B09078058F7DD299F44113 /* Pods */ = {
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A078D031F921C080016E380 /* User.swift in Sources */,
 				8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */,
 				8A078CDB1F91BD0C0016E380 /* ViewController.swift in Sources */,
 				8A078CD91F91BD0C0016E380 /* AppDelegate.swift in Sources */,
