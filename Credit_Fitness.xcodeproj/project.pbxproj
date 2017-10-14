@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A078CD91F91BD0C0016E380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078CD81F91BD0C0016E380 /* AppDelegate.swift */; };
-		8A078CDB1F91BD0C0016E380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078CDA1F91BD0C0016E380 /* ViewController.swift */; };
 		8A078CDE1F91BD0C0016E380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CDC1F91BD0C0016E380 /* Main.storyboard */; };
 		8A078CE01F91BD0C0016E380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CDF1F91BD0C0016E380 /* Assets.xcassets */; };
 		8A078CE31F91BD0C0016E380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CE11F91BD0C0016E380 /* LaunchScreen.storyboard */; };
@@ -17,13 +16,16 @@
 		8A078CF21F91C7F60016E380 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A078CF11F91C7F60016E380 /* Login.storyboard */; };
 		8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078CF31F91CBC20016E380 /* LoginViewController.swift */; };
 		8A078D031F921C080016E380 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D021F921C080016E380 /* User.swift */; };
+		8A078D051F921F6C0016E380 /* UsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D041F921F6C0016E380 /* UsernameVC.swift */; };
+		8A078D081F924DF70016E380 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D071F924DF70016E380 /* UserService.swift */; };
+		8A078D0A1F925B170016E380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D091F925B170016E380 /* HomeViewController.swift */; };
+		8A078D0C1F925B2D0016E380 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A078D0B1F925B2D0016E380 /* BudgetViewController.swift */; };
 		BA759E962729B9AE181AFE83 /* Pods_Credit_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A078CD51F91BD0C0016E380 /* Credit_Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Credit_Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A078CD81F91BD0C0016E380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A078CDA1F91BD0C0016E380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A078CDD1F91BD0C0016E380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A078CDF1F91BD0C0016E380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A078CE21F91BD0C0016E380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +35,10 @@
 		8A078CF11F91C7F60016E380 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8A078CF31F91CBC20016E380 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A078D021F921C080016E380 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A078D041F921F6C0016E380 /* UsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameVC.swift; sourceTree = "<group>"; };
+		8A078D071F924DF70016E380 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8A078D091F925B170016E380 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A078D0B1F925B2D0016E380 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		B146B501B642F60E26CE1632 /* Pods_Credit_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ECC049400D2C88C1B6D982 /* Pods-Credit_Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		C4C87C4074B7A8F4368CD371 /* Pods-Credit_Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit_Fitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,8 +85,9 @@
 		8A078CD71F91BD0C0016E380 /* Credit_Fitness */ = {
 			isa = PBXGroup;
 			children = (
-				8A078D011F921BF40016E380 /* Models */,
 				8A078CD81F91BD0C0016E380 /* AppDelegate.swift */,
+				8A078D061F924DD90016E380 /* Services */,
+				8A078D011F921BF40016E380 /* Models */,
 				8A078CED1F91C6DB0016E380 /* View Controllers */,
 				8A078CEE1F91C6ED0016E380 /* Storyboards */,
 				8A078CDF1F91BD0C0016E380 /* Assets.xcassets */,
@@ -102,8 +109,10 @@
 		8A078CED1F91C6DB0016E380 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A078CDA1F91BD0C0016E380 /* ViewController.swift */,
 				8A078CF31F91CBC20016E380 /* LoginViewController.swift */,
+				8A078D041F921F6C0016E380 /* UsernameVC.swift */,
+				8A078D091F925B170016E380 /* HomeViewController.swift */,
+				8A078D0B1F925B2D0016E380 /* BudgetViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -124,6 +133,14 @@
 				8A078D021F921C080016E380 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8A078D061F924DD90016E380 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A078D071F924DF70016E380 /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F5B09078058F7DD299F44113 /* Pods */ = {
@@ -216,7 +233,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -236,6 +253,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Credit_Fitness/Pods-Credit_Fitness-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KDCircularProgress/KDCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -243,6 +261,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -277,9 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A078D031F921C080016E380 /* User.swift in Sources */,
+				8A078D0C1F925B2D0016E380 /* BudgetViewController.swift in Sources */,
 				8A078CF41F91CBC20016E380 /* LoginViewController.swift in Sources */,
-				8A078CDB1F91BD0C0016E380 /* ViewController.swift in Sources */,
+				8A078D081F924DF70016E380 /* UserService.swift in Sources */,
 				8A078CD91F91BD0C0016E380 /* AppDelegate.swift in Sources */,
+				8A078D051F921F6C0016E380 /* UsernameVC.swift in Sources */,
+				8A078D0A1F925B170016E380 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

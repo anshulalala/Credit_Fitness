@@ -16,6 +16,7 @@ import FirebaseDatabase
 typealias FIRUser = FirebaseAuth.User
 
 
+
 class LoginViewController: UIViewController {
    
     @IBOutlet weak var login: UIButton!
@@ -59,10 +60,18 @@ extension LoginViewController: FUIAuthDelegate {
         // 3
         userRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let user = User(snapshot: snapshot) {
-                print("Welcome back, \(user.username).")
+                User.setCurrent(user)
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+                
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
+                //print("Welcome back, \(user.username).")
             } else {
-                print("New user!")
-            }
-        })
+                    self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+                }
+            })
     }
 }

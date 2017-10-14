@@ -11,6 +11,7 @@ target 'Credit_Fitness' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage' 
+  pod 'KDCircularProgress'
   # Pods for Credit_Fitness
 
 end
